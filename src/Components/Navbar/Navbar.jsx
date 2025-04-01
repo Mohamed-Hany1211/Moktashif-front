@@ -2,11 +2,12 @@ import { Disclosure, DisclosureButton, DisclosurePanel, Menu, MenuButton, MenuIt
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import style from './Navbar.module.css'
 import { Link } from 'react-router-dom'
+import '../../assets/GlobalStyle.css';
+import ThemeMode from '../ThemeMode/ThemeMode'
 const navigation = [
-    { name: 'Home', href: '', current: true },
+    { name: 'Home', href: '', current: false },
     { name: 'Results', href: 'results', current: false },
-    { name: 'SignIn', href: 'signin', current: false },
-    { name: 'Profile', href: 'profile', current: false },
+    { name: 'SignIn', href: 'signin', current: false }
 ]
 
 function classNames(...classes) {
@@ -15,7 +16,7 @@ function classNames(...classes) {
 
 export default function Example() {
     return (
-        <Disclosure as="nav" className="bg-gray-800">
+        <Disclosure as="nav" className={`${style.navBarStyle}`}>
             <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
                 <div className="relative flex h-16 items-center justify-between">
                     <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -29,11 +30,7 @@ export default function Example() {
                     </div>
                     <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                         <div className="flex shrink-0 items-center">
-                            <img
-                                alt="Your Company"
-                                src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
-                                className="h-8 w-auto"
-                            />
+                            <i className={`fa-solid fa-bug ${style.navLogo} `} />
                         </div>
                         <div className="hidden sm:ml-6 sm:block">
                             <div className="flex space-x-4">
@@ -43,8 +40,7 @@ export default function Example() {
                                         to={item.href}
                                         aria-current={item.current ? 'page' : undefined}
                                         className={classNames(
-                                            item.current ? 'bg-gray-900 text-white' : `text-gray-300 hover:bg-gray-700 ${style.aHover}`,
-                                            'rounded-md px-3 py-2 text-sm font-medium',
+                                            item.current ? ` ${style.navLinksStyle}` : `${style.navLinksStyle} ${style.aHover}`
                                         )}
                                     >
                                         {item.name}
@@ -54,6 +50,7 @@ export default function Example() {
                         </div>
                     </div>
                     <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                        <ThemeMode />
                         <button
                             type="button"
                             className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden"
@@ -66,7 +63,7 @@ export default function Example() {
                         {/* Profile dropdown */}
                         <Menu as="div" className="relative ml-3">
                             <div>
-                                <MenuButton className="relative flex rounded-full bg-gray-800 text-sm focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden">
+                                <MenuButton  className="relative flex rounded-full bg-gray-800 text-sm focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden">
                                     <span className="absolute -inset-1.5" />
                                     <span className="sr-only">Open user menu</span>
                                     <img
@@ -76,17 +73,18 @@ export default function Example() {
                                     />
                                 </MenuButton>
                             </div>
+                            
                             <MenuItems
                                 transition
                                 className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 ring-1 shadow-lg ring-black/5 transition focus:outline-hidden data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in"
                             >
                                 <MenuItem>
-                                    <a
+                                    <Link to={'profile'}
                                         href="#"
                                         className="block px-4 py-2 text-sm text-gray-700 data-focus:bg-gray-100 data-focus:outline-hidden"
                                     >
                                         Your Profile
-                                    </a>
+                                    </Link>
                                 </MenuItem>
                                 <MenuItem>
                                     <a

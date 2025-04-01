@@ -1,0 +1,5 @@
+.homeBackground{
+    background-color: var(--body_background);
+    transition: var(--theme_transition);
+    color: var(--text_color);
+}

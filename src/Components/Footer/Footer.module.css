@@ -1,0 +1,23 @@
+.footerStyle{
+    background-color: var(--body_background);
+    color: var(--text_color);
+    transition: var(--theme_transition);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    border-top: 2px solid var(--footer_upper_border) ;
+}
+
+.copyright{
+    color: var(--copyRight);
+    font-size: 1.05rem;
+    font-weight: 400;
+}
+
+.social_icons{
+    color: var(--copyRight);
+    font-size: 1.1rem;
+    margin-left: 15px;
+    margin-right: 15px;
+}

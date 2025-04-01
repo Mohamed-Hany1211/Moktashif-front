@@ -5,3 +5,20 @@ a{
 .aHover:hover{
     color: white;
 }
+
+.navBarStyle{
+    background-color: var(--navbar_background);
+    transition: var(--theme_transition);
+    height: 70px;
+}
+
+.navLinksStyle{
+    color: var(--copyRight);
+    font-weight: 500;
+}
+
+.navLogo{
+    color: var(--fourth_color);
+    font-size: 1.7rem;
+    opacity: 0.7;
+}
