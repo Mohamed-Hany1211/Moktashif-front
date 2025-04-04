@@ -14,7 +14,7 @@ function classNames(...classes) {
     return classes.filter(Boolean).join(' ')
 }
 
-export default function Example() {
+export default function Navbar() {
     return (
         <Disclosure as="nav" className={`${style.navBarStyle}`}>
             <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">

@@ -6,10 +6,10 @@ export default function Footer() {
             <div className={` ${style.copyright}`}>Copyright © 2022 BRIX | All Rights Reserved</div>
             <div className={``}>
                 <div className=''>
-                    <i className={`fa-brands fa-facebook-f ${style.social_icons}`} />
-                    <i className={`fa-brands fa-x-twitter ${style.social_icons}`}/>
-                    <i className={`fa-brands fa-instagram ${style.social_icons}`} />
-                    <i className={`fa-brands fa-linkedin-in ${style.social_icons}`} />
+                    <i className={`cursor-pointer fa-brands fa-facebook-f ${style.social_icons}`} />
+                    <i className={`cursor-pointer fa-brands fa-x-twitter ${style.social_icons}`}/>
+                    <i className={`cursor-pointer fa-brands fa-instagram ${style.social_icons}`} />
+                    <i className={`cursor-pointer fa-brands fa-linkedin-in ${style.social_icons}`} />
                 </div>
             </div>
         </footer>

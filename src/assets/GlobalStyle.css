@@ -24,5 +24,6 @@
     --copyRight:#667085;
 }
 
-
-
+.cursor-pointer{
+    cursor: pointer;
+}

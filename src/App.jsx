@@ -7,7 +7,6 @@ import Results from "./Components/Results/Results";
 import SignIn from "./Components/SignIn/SignIn";
 import SignUp from "./Components/SignUp/SignUp";
 import UserProfile from "./Components/UserProfile/UserProfile";
-import '../src/assets/GlobalStyle.css';
 let routers = createBrowserRouter([
   {
     path: '', element: <Layout />, children: [
