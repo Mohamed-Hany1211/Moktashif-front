@@ -2,23 +2,74 @@ a{
     text-decoration: none;
 }
 
-.aHover:hover{
+/* .aHover:hover{
     color: white;
-}
+} */
 
 .navBarStyle{
     background-color: var(--navbar_background);
     transition: var(--theme_transition);
-    height: 70px;
+    height: 4.375rem;
 }
 
 .navLinksStyle{
-    color: var(--copyRight);
-    font-weight: 500;
+    color: var(--fifth_color);
+    transition: var(--theme_transition);
+    font-weight: 700;
+    font-size: .875rem;
+    letter-spacing: 0rem;
 }
 
 .navLogo{
     color: var(--fourth_color);
-    font-size: 1.7rem;
+    transition: var(--theme_transition);
+    font-size: 25px;
+    opacity: 0.65;
+    margin-top: .2188rem;
+    rotate:-45deg;
+}
+
+.signInContainerStyle{
+    margin-left: .9375rem;
+    background-color: var(--fourth_color);
+    transition: var(--theme_transition);
+    width: 5rem;
+    height: 1.875rem;
+    border-radius: 3.125rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     opacity: 0.7;
+}
+
+
+
+.signInStyle{
+    color: var(--SignIn_color);
+    transition: var(--theme_transition);
+    font-weight: 500;
+    font-size: .875rem;
+    letter-spacing: 0rem;
+    font-weight: 700;
+}
+
+.notification{
+    font-size: 1.5rem !important;
+    color: var(--fifth_color) !important;
+    font-weight: 300 !important;
+    margin-top: .3125rem !important;
+    transition: var(--theme_transition);
+    margin-left: 1.25rem
+}
+
+.RightLeftBorder{
+    border-left: .125rem solid var(--fifth_color);
+    border-right: .125rem solid var(--fifth_color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1.2rem;
+    padding-right: 1.3rem;
+    opacity: 0.65;
+    margin-right: 1.25rem;
 }

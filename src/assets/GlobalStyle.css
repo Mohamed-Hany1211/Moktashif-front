@@ -4,13 +4,15 @@
 
 [data-theme="dark"] {
     --body_background: #1c2541;
-    --navbar_background: #596788;
+    --navbar_background: #667085;
     --text_color: white;
     --fourth_color: #eaecf0;
-    --fifth_color: #eaecf0;
+    --fifth_color: rgba(234, 236, 240,0.65);
     --theme_transition: all 0.5s ease-in-out;
     --footer_upper_border:rgba(255, 255, 255,0.6);
     --copyRight:white;
+    --SignIn_color:black;
+    --form_color:#667085;
 }
 
 [data-theme="light"] {
@@ -18,12 +20,18 @@
     --navbar_background: #d6d6d6;
     --text_color: black;
     --fourth_color: #5c87ff;
-    --fifth_color: #292D32;
+    --fifth_color: rgba(41, 45, 50, 0.65);
     --theme_transition: all 0.5s ease-in-out;
     --footer_upper_border:rgba(128, 128, 128,0.4);
     --copyRight:#667085;
+    --SignIn_color:white;
+    --form_color:#5c87ff;
 }
 
 .cursor-pointer{
     cursor: pointer;
+}
+
+.btn{
+    border: none !important;
 }

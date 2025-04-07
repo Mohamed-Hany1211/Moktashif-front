@@ -2,7 +2,7 @@ import React from 'react'
 import style from './Footer.module.css';
 export default function Footer() {
     return (
-        <footer className={`${style.footerStyle} p-2  text-center fixed-bottom`}>
+        <footer className={`${style.footerStyle} p-2  text-center fixed-bottom mx-2`}>
             <div className={` ${style.copyright}`}>Copyright © 2022 BRIX | All Rights Reserved</div>
             <div className={``}>
                 <div className=''>

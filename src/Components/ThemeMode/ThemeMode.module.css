@@ -1,3 +1,8 @@
-.themeToggleButton{
+.themeToggleButton {
     font-size: 1.5rem;
+    color: var(--fifth_color);
+    font-weight: 300 !important;
+    rotate: -20deg;
+    margin-top: .3125rem;
+    transition: var(--theme_transition);
 }
