@@ -4,8 +4,10 @@ import Layout from "./Components/Layout/Layout";
 import Home from "./Components/Home/Home";
 import NotFound from "./Components/NotFound/NotFound";
 import Results from "./Components/Results/Results";
-import SignIn from "./Components/SignIn/SignIn";
+import SignIn from "./Components/SignIn_SignUp/SignIn_SignUp";
 import UserProfile from "./Components/UserProfile/UserProfile";
+import ContactSupport from "./Components/ContactSupport/ContactSupport";
+
 let routers = createBrowserRouter([
   {
     path: '', element: <Layout />, children: [
@@ -13,6 +15,7 @@ let routers = createBrowserRouter([
       { path: 'results', element: <Results /> },
       {path: 'signin', element: <SignIn />},
       { path: 'profile', element: <UserProfile /> },
+      // { path: 'contactsupport', element: < ContactSupport/> },
       { path: '*', element: <NotFound /> }
     ]
   }
